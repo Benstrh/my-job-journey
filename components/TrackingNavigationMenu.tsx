@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -106,11 +106,13 @@ export default function TrackingNavigationMenu() {
 }
 
 function TrackingButton({ label, children }: TrackingButtonType) {
+  const [open, setIsOpen] = useState(false);
+
   return (
-    <DropdownMenu>
+    <DropdownMenu open={open} onOpenChange={() => setIsOpen(!open)}>
       <DropdownMenuTrigger
         render={
-          <Button variant="primary" size={"none"}>
+          <Button variant={`${open ? "clicked" : "primary"}`} size={"none"}>
             {label}
           </Button>
         }

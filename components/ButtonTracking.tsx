@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { Button } from "./ui/button";
 
 const buttonStlyeClasses = "relative w-full";
 
-export default function ButtonTracking({ label }: { label: string }) {
+export default function ButtonTracking({ children }: { children: ReactNode }) {
   const [isClick, setIsClick] = useState(false);
 
   function handleClick() {
@@ -14,12 +14,11 @@ export default function ButtonTracking({ label }: { label: string }) {
 
   return (
     <Button
-      variant="primary"
+      variant={`${isClick ? "clicked" : "primary"}`}
       size={"none"}
       onClick={handleClick}
-      className={`${isClick ? "bg-black text-white" : ""}`}
     >
-      {label}
+      {children}
     </Button>
   );
 }

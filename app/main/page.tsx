@@ -1,6 +1,5 @@
 import FilterMenu from "@/components/FilterMenu";
 import Logo from "@/components/Logo";
-import TrackingNavigationMenu from "@/components/TrackingNavigationMenu";
 
 export default function Page() {
   return (
@@ -12,9 +11,7 @@ export default function Page() {
       <div className="mb-8 px-8">USER</div>
       <div className="w-full space-y-8 px-8">
         <FilterMenu />
-        {/*  <div className="flex h-10 w-full items-center rounded-lg bg-white/50 p-6 drop-shadow-lg backdrop-blur-lg">
-          TRACKING MENU
-        </div> */}
+   
         <div className="menu-table flex max-h-screen w-full flex-col">
           <div className="menu-header relative h-10 w-full">JOB LISTS</div>
         </div>
