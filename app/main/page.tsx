@@ -1,4 +1,6 @@
+import ButtonAdd from "@/components/ButtonAdd";
 import FilterMenu from "@/components/FilterMenu";
+import JobLists from "@/components/JobLists";
 import Logo from "@/components/Logo";
 
 export default function Page() {
@@ -9,12 +11,13 @@ export default function Page() {
         <div>NAVBAR</div>
       </div>
       <div className="mb-8 px-8">USER</div>
-      <div className="w-full space-y-8 px-8">
-        <FilterMenu />
-   
-        <div className="menu-table flex max-h-screen w-full flex-col">
-          <div className="menu-header relative h-10 w-full">JOB LISTS</div>
+      <div className="space-y-8 px-8">
+        <div className="flex items-center justify-between">
+          <ButtonAdd />
+          <FilterMenu />
         </div>
+
+        <JobLists />
       </div>
     </div>
   );

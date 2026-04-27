@@ -18,6 +18,13 @@
   --color-accent-300: #f3e67e;
   --color-accent-400: #f2e36f;
   --color-accent-500: #f1e05f;
+
+  --color-shade-50: #f6f6f6;
+  --color-shade-100: #f4f4f4;
+  --color-shade-200: #f3f3f3;
+  --color-shade-300: #f1f1f1;
+  --color-shade-400: #efefef;
+  --color-shade-500: #eeeeee;
 }
 
 /* :root {
