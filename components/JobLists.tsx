@@ -1,9 +1,15 @@
+import Jobs from "./Jobs";
+import ListHeader from "./ListHeader";
+
 export default function JobLists() {
   return (
-    <div className="menu-table flex max-h-screen w-full flex-col bg-shade-200/50 p-4">
-      <div className="menu-header relative flex h-10 w-full items-center rounded-full bg-shade-500 p-2 drop-shadow-sm">
-        <div className="relative w-[20%] p-2 text-sm">Company Name</div>
-      </div>
+    <div className="menu-table min-h-125 w-full overflow-hidden bg-shade-200/50 p-4">
+      <ListHeader />
+      <Jobs />
+      <Jobs />
+      <Jobs />
+      <Jobs />
+      <Jobs />
     </div>
   );
 }

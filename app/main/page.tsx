@@ -13,7 +13,7 @@ export default function Page() {
       <div className="mb-8 px-8">USER</div>
       <div className="space-y-8 px-8">
         <div className="flex items-center justify-between">
-          <ButtonAdd />
+          {/* <ButtonAdd /> */}
           <FilterMenu />
         </div>
 
