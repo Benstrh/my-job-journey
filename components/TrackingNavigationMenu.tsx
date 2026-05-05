@@ -12,11 +12,6 @@ import {
 } from "./ui/dropdown-menu";
 import Link from "next/link";
 
-interface TrackingButtonType {
-  label: string;
-  children: ReactNode;
-}
-
 const styleClasses =
   "transition-colors duration-100 hover:bg-black hover:text-white";
 const buttonStlyeClasses = "relative w-full";
@@ -103,6 +98,11 @@ export default function TrackingNavigationMenu() {
       </TrackingButton>
     </>
   );
+}
+
+interface TrackingButtonType {
+  label: string;
+  children: ReactNode;
 }
 
 function TrackingButton({ label, children }: TrackingButtonType) {
